@@ -14,4 +14,5 @@ enum class TokenKind {
 struct Token {
   TokenKind kind;
   std::string_view lexeme;
-}
+  std::size_t pos;
+};
