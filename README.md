@@ -1,7 +1,7 @@
 # mycompiler
 
 ## Goal
-A tiny language to practice compiler stages: lexing → parsing → AST.
+A tiny language to practice compiler stages: lexing → parsing → AST. (for now)
 
 ## Source file
 Plain text (UTF-8). For now, input is a single line string in `main.cpp`.
