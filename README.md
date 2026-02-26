@@ -15,6 +15,6 @@ The lexer recognizes these token kinds:
 - `Equal`       : `=`
 - `Semicolon`   : `;`
 - `Eof`         : end of input
-- `Unknown`     : anything else (temporary; later becomes a lexer error)
+- `Unknown`     : anything else 
 
 Whitespace (spaces/tabs/newlines) is ignored between tokens.
