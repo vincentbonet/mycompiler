@@ -7,6 +7,10 @@ enum class TokenKind {
   KeywordLet,
   Equal,
   Semicolon,
+  Plus,
+  Minus,
+  Star,
+  Slash
   Eof,
   Unknown
 };

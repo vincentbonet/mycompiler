@@ -66,6 +66,10 @@ Token Lexer::next() {
   switch (c) {
     case '=': return make(TokenKind::Equal, start, i_);
     case ';': return make(TokenKind::Semicolon, start, i_);
+    case '+': return make(TokenKind::Plus, start, i_);
+    case '-': return make(TokenKind::Minus, start, i_);
+    case '*': return make(TokenKind::Star, start, i_);
+    case '/': return make(TokenKind::Slash, start, i_);
     default:  return make(TokenKind::Unknown, start, i_);
   }
 }
@@ -77,6 +81,10 @@ const char* token_kind_to_string(TokenKind k) {
     case TokenKind::KeywordLet: return "KeywordLet";
     case TokenKind::Equal: return "Equal";
     case TokenKind::Semicolon: return "Semicolon";
+    case TokenKind::Plus: return "Plus";
+    case TokenKind::Minus: return "Minus";
+    case TokenKind::Star: return "Star";
+    case TokenKind::Slash: return "Slash";
     case TokenKind::Eof: return "Eof";
     default: return "Unknown";
   }
